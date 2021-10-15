@@ -52,8 +52,6 @@ namespace Hack29_WebApp.DatabaseLayer
 
                 entity.Property(e => e.UserId)
                     .IsRequired()
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
                     .HasColumnName("userId");
 
                 entity.Property(e => e.WorkflowInstanceId)
