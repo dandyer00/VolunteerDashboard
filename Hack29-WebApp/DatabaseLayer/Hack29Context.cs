@@ -38,6 +38,8 @@ namespace Hack29_WebApp.DatabaseLayer
             {
                 entity.Property(e => e.EventId).HasColumnName("eventId");
 
+                entity.Property(e => e.EventCode).HasColumnName("eventCode");
+
                 entity.Property(e => e.EventName)
                     .IsRequired()
                     .HasMaxLength(50)
@@ -50,9 +52,7 @@ namespace Hack29_WebApp.DatabaseLayer
                     .IsConcurrencyToken()
                     .HasColumnName("eventTime");
 
-                entity.Property(e => e.UserId)
-                    .IsRequired()
-                    .HasColumnName("userId");
+                entity.Property(e => e.UserId).HasColumnName("userId");
 
                 entity.Property(e => e.WorkflowInstanceId)
                     .IsRequired()

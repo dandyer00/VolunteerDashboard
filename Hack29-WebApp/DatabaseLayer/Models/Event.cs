@@ -12,5 +12,6 @@ namespace Hack29_WebApp.DatabaseLayer.Models
         public int UserId { get; set; }
         public byte[] EventTime { get; set; }
         public string WorkflowInstanceId { get; set; }
+        public int EventCode { get; set; }
     }
 }
